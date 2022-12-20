@@ -28,20 +28,20 @@
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="w-25">
-                                        <img class="img-fluid rounded" src="{{ item.products.image.url }}">
+                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
                                     </td>
                                     <td class="py-3">
-                                        <h2 class="my-0">{{ item.products.name }}</h2>
-                                        <p class="my-0 text-muted">SKU: {{ item.products.sku|upper }}</p>
+                                        <h2 class="my-0">{{ item.product.name }}</h2>
+                                        <p class="my-0 text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0 text-center">${{ item.products.price }}</p>
+                                        <p class="my-0 text-center">${{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
                                         <p class="my-0 text-center">{{ item.quantity }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0 text-center">${{ item.products.price }}</p>
+                                        <p class="my-0 text-center">${{ item.product.price }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
