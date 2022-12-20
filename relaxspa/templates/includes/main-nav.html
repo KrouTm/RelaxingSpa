@@ -1,0 +1,23 @@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        By Category
+    </a>
+    <ul class="dropdown-menu border-0" aria-labelledby="all-products-link">
+        <li><a href="{% url 'services' %}?category=body"  class="dropdown-item">Body</a></li>
+        <li><a href="{% url 'services' %}?category=face"  class="dropdown-item ">Face</a></li>
+        <li><a href="{% url 'services' %}?category=feet"  class="dropdown-item ">Feet</a></li>
+        <li><a href="{% url 'services' %}?category=jacuzzi"  class="dropdown-item">Jacuzzi</a></li>
+        <li><a href="{% url 'services' %}"  class="dropdown-item ">All Services</a></li>
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Services
+    </a>
+    <ul class="dropdown-menu border-0" aria-labelledby="all-products-link">
+        <li><a href="{% url 'services' %}?sort=price&direction=asc"  class="dropdown-item">By Low Price to High</a></li>
+        <li><a href="{% url 'services' %}?sort=price&direction=desc"  class="dropdown-item ">By High Price to Low</a></li>
+        <li><a href="{% url 'services' %}?category=jacuzzi"  class="dropdown-item">All Specials</a></li>
+    </ul>
+</li>
