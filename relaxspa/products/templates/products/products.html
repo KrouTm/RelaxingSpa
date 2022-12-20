@@ -8,16 +8,16 @@
 {% block content %}
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        {% for services in services %}
+        {% for product in products %}
             <div class="col">
                 <div class="card border-0">
-                    <a href="{% url 'services_detail' services.id %}"><img class="card-img-top" src="{{ services.image.url }}" alt="{{ services.name }}"></a>
+                    <a href="{% url 'product_detail' product.id %}"><img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}"></a>
                     <div class="card-body">
-                        <h3 class="card-title">{{ services.name }}</h3>
-                        <p>${{ services.price }}</p>
-                        {% if services.category %}
-                            <a class="d-flex" href="{% url 'services' %}?category={{ services.category.name }}">
-                                <i class="las la-tag" style="font-size: 0.7rem;"></i><p>{{ services.category.friendly_name }}</p>
+                        <h3 class="card-title">{{ product.name }}</h3>
+                        <p>${{ product.price }}</p>
+                        {% if product.category %}
+                            <a class="d-flex" href="{% url 'products' %}?category={{ products.category.name }}">
+                                <i class="las la-tag" style="font-size: 0.7rem;"></i><p>{{ product.category.friendly_name }}</p>
                             </a>
                         {% endif %}
                     </div>

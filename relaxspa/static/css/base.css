@@ -102,13 +102,13 @@ a{text-decoration: none;}
 
 
 /*Background Images Booking*/
-.buy-service0{background-image: url(../static/Pictures/backgroung-booking/cosmetology-and-spa.jpg);}
-.buy-service1{background-image: url(../static/Pictures/backgroung-booking/spa-concept-with-woman-and-massage.jpg);}
-.buy-service2{background-image: url(static/Pictures/backgroung-booking/spa-concept-with-woman-with-creme-in-face.jpg);}
-.buy-service3{background-image: url(Pictures/backgroung-booking/young-woman-relaxing-in-spa-salon.jpg);}
-.buy-service4{background-image: url(../../static/Pictures/backgroung-booking/woman-relaxing-in-bath-with-bubbles.jpg);}
-.buy-service5{background-image: url(elite.jpg);}
-.img-service{background-position: center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 70vh;}
+.buy-product0{background-image: url(../static/Pictures/backgroung-booking/cosmetology-and-spa.jpg);}
+.buy-product1{background-image: url(../static/Pictures/backgroung-booking/spa-concept-with-woman-and-massage.jpg);}
+.buy-product2{background-image: url(static/Pictures/backgroung-booking/spa-concept-with-woman-with-creme-in-face.jpg);}
+.buy-product3{background-image: url(Pictures/backgroung-booking/young-woman-relaxing-in-spa-salon.jpg);}
+.buy-product4{background-image: url(../../static/Pictures/backgroung-booking/woman-relaxing-in-bath-with-bubbles.jpg);}
+.buy-product5{background-image: url(elite.jpg);}
+.img-product{background-position: center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 70vh;}
 
 
 

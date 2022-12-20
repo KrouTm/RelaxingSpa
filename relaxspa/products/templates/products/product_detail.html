@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container my-5">
+                    {% if products.image %}
+                        <a href="{{ products.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ products.image.url }}" alt="{{ products.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ products.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="products-details-container mb-5 mt-md-5">
+                    <h4 class="mb-0">{{ products.name }}</h4>
+                    <p class="lead mb-0">${{ products.price }}</p>
+                    {% if products.category %}
+                    <a class="d-flex" href="{% url 'products' %}?category={{ products.category.name }}">
+                        <i class="las la-tag" style="font-size: 0.7rem;"></i><p>{{ products.category.friendly_name }}</p>
+                    </a>
+                    {% endif %}
+                    <p class="mt-2">{{ products.description }}</p>
+                    <form class="form" action="{% url 'add_to_cart' products.id %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+
+                            <h3 class="mt-2">Quantity:</h3>
+
+                            <div class="input-group">
+                                <button class="decrement-qty btn" data-item_id="{{ products.id }}" id="decrement-qty_{{ products.id }}">
+                                    <span><i class="las la-minus"></i></span>
+                                </button>
+                                <input class="qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ products.id }}" id="id_qty_{{ products.id }}">
+
+                                <button class="increment-qty btn" data-item_id="{{ products.id }}" id="increment-qty_{{ products.id }}">
+                                    <span><i class="las la-plus"></i></span>
+                                </button>
+                            </div>
+
+                            <div class="d-flex">
+                                <a href="{% url 'products' %}" class="btn btn-secondary m-2">Keep Shopping</a>
+                                <input type="submit" class="btn btn-primary m-2" value="Add to Bag">
+                            </div>
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
+{% endblock %}
