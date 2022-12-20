@@ -1,0 +1,120 @@
+*{color: purple; font-size: 2rem; padding: 0; margin: 0; font-family: 'Julius Sans One', sans-serif;}
+
+p{font-size: 0.5rem; font-family: 'Mali', cursive; color: black;}
+h1{font-size: 0.4rem; font-family: 'Mali', cursive; color: black;}
+h2{font-size: 0.7rem;}
+h3{font-size: 1rem;}
+h4{font-size: 1.5rem;}
+i{font-size: 1.2rem;}
+a{text-decoration: none;}
+
+
+/*Navbar*/
+.navbar{padding: 0rem;}
+.navbar-brand img{height: 2rem;}
+.navbar-nav a{font-size: 1rem;}
+
+
+
+
+/*Slide*/
+.img0{background-image: url(../Pictures/top-view-spa-towels-and-candles-with-copy-space.jpg); background-position: 10% 40%;}
+.img1{background-image: url(../Pictures/spa0.jpg);}
+.img2{background-image: url(../Pictures/huum-Ruso6EXMC5U-unsplash.jpg);}
+.img3{background-image: url(../Pictures/woman-relaxing-in-whirlpool.jpg);}
+.img4{background-image: url(../Pictures/pexels-monstera-6620860.jpg);}
+.img-carousel{background-size: cover; background-position: center; width: 100%; height: 100vh;}
+/*Description on the Slide*/
+.all-intro{position: absolute; left: 0; right: 0; top: 10vh; bottom: 10vh; justify-content: center; display: flex;}
+.back-intro{padding: 0 1rem; color: white; border-width: 0 0.2rem; border-style: solid; border-image: linear-gradient(to bottom, purple, transparent) 1; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent); width: 55%;}
+/*Logo*/
+.back-intro img{width: 13rem; display: flex; margin: auto;}
+/*Small line*/
+.back-intro hr{width: 2rem; border: 2px solid; opacity: 1; position: relative; top: -0.2rem; margin: 0.7rem;}
+/*List*/
+.back-intro ul{font-family: 'Poiret One', cursive;}
+.back-intro li{font-size: 0.7rem; font-family: 'Mali', cursive; color: black;}
+/*Scocial Media Icons*/
+.icons{display: flex; justify-content: center;}
+.icons i{margin: 1rem; cursor: pointer;}
+
+@media(max-width:1025px){
+    .back-intro{width: 70%;}
+}
+
+
+
+
+/*3 Cards*/
+/*Background purple*/
+.row{padding: 3rem 3rem; background-image: url(../Pictures/background-purple.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin: 0;}
+/*3 Cards Images*/
+.card-img0{background-image: url(https://images.pexels.com/photos/374148/pexels-photo-374148.jpeg); background-position: center;}
+.card-img1{background-image: url(https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80); background-position: right;}
+.card-img2{background-image: url(https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);background-position: center;}
+.style-card-img{background-size: cover; height: 12rem; margin: 0.2rem; border-radius: 0.2rem;}
+
+
+
+/*Contact*/
+#Contact{background-image: url('../../static/Pictures/contact.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; z-index: -10; width: 100%; height: 20rem}
+.form-contact{padding: 2rem 0; position: absolute; right: 2rem; width: 30%;}
+.form-control{padding: 0.1rem 0.5rem; margin: 0.1rem 0; border: solid 2px purple; cursor: text; font-family: 'Mali', cursive; font-size: 0.7rem; color: white; background-color: rgba(0, 0, 0, 0.5);}
+.form-control::placeholder{color: white;}
+@media(max-width:768px){
+    .form-contact{width: 90%; right: 0; left: 0; margin: auto;}
+}
+
+
+
+
+/*Footer*/
+.footer hr{display: block; width: 2.5rem; overflow: hidden; border-style: solid; border-width: 1px;}
+.footer{line-height: 1rem; letter-spacing: 2px; padding: 2rem 1rem;}
+.grid-footer{display: grid; grid-template-columns: repeat(3,1fr);}
+/*Opening Hours*/
+.margin-footer div{display: grid; grid-template-columns: repeat(2,1fr); margin-top: 1rem;}
+/*Stay in Touch*/
+.p-info-font i{font-size: 0.7rem; margin: 0 0.2rem;}
+.p-info-font a{display: flex; margin-bottom: 0.5rem;}
+.p-info-font a:hover{opacity: 0.8;}
+/*Recent Posts*/
+.post ul{display: flex; border: solid 1px rgb(206, 189, 179); border-radius: 0.2rem; line-height: normal;}
+.img-new{background-image: url(../../static/Pictures/footer/elite.jpg);}
+.img-new0{background-image: url(../../static/Pictures/footer/jacuzzi.jpg);}
+.style-new{display: flex; width: 4rem; height: auto; margin-left: -2rem; border-radius: 0.2rem; background-position: center; background-size: cover; background-repeat: no-repeat;}
+.post li{display: block; padding: 0.5rem;}
+/*Social Medias*/
+.social-footer{display: flex; justify-content: center;}
+.social-footer i{margin: 1rem;}
+.social-footer i:hover{opacity: 0.7;}
+
+@media(max-width:768px){
+    .footer hr{margin: auto;}
+    .grid-footer{display: block; margin: auto; text-align: center;}
+    .p-info-font{text-align: center;}
+    .p-info-font a{display: block;}
+    .margin-footer{margin: 1rem 0;}
+    .post ul{max-width: 90%; margin: auto;}
+}
+
+
+
+
+/*Background Images Booking*/
+.buy-service0{background-image: url(../static/Pictures/backgroung-booking/cosmetology-and-spa.jpg);}
+.buy-service1{background-image: url(../static/Pictures/backgroung-booking/spa-concept-with-woman-and-massage.jpg);}
+.buy-service2{background-image: url(static/Pictures/backgroung-booking/spa-concept-with-woman-with-creme-in-face.jpg);}
+.buy-service3{background-image: url(Pictures/backgroung-booking/young-woman-relaxing-in-spa-salon.jpg);}
+.buy-service4{background-image: url(../../static/Pictures/backgroung-booking/woman-relaxing-in-bath-with-bubbles.jpg);}
+.buy-service5{background-image: url(elite.jpg);}
+.img-service{background-position: center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 70vh;}
+
+
+
+
+
+
+
+
+
