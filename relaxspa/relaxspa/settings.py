@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+APPEND_SLASH = True
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -72,6 +73,7 @@ TEMPLATES = [
                 "django.template.context_processors.request", # required by allauth
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                'bag.contexts.bag_contents',
             ],
         },
     },

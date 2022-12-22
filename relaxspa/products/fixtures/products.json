@@ -1,98 +1,98 @@
 [
-    {
-      "pk": 1,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5001340155",
-        "name": "Body Massage",
-        "description": "Created to recondition skin, detoxify and invigorate, and nurture mind and body. Using the finest botanical formulations, revitalising body scrubs and nurturing body wraps, for detoxification, skin that is supple and toned and complete relaxation.",
-        "price": 55.99,
-        "category": 1,
-        "image": "body.jpg"
-      }
-    },
-    {
-        "pk": 2,
-        "model": "products.product",
-        "fields": {
-          "sku": "pp5001600425",
-          "name": "Elite Facial",
-          "description": "Experience complete relaxation while being cocooned in a heated cloud of bliss. Our Elite Facials are 100% customized to your skin. We combine the basics of a facial with steam & extractions for that extra boost. To top it off we add a face, hand & arm massage to complete your Forever Young Facial experience.",
-          "price": 68.55,
-          "category": 2,
-          "image": "elite.jpg"
-        }
-      },
-      {
-        "pk": 3,
-        "model": "products.product",
-        "fields": {
-          "sku": "pp5001730010",
-          "name": "Premium Elite Facial",
-          "description": "100% customized to your skin. Combine all of the benefits of the elite facial with 2 luxurious add on's of your choice. Foot massage, Warm paraffin wax hand soak, Stress positive eye massage, Exfoliating lip treatment, Gua Sha stone face massage, Scalp massage",
-          "price": 86.70,
-          "category": 2,
-          "image": "premium.jpg"
-        }
-      },
-      {
-        "pk": 4,
-        "model": "products.product",
-        "fields": {
-          "sku": "pp5001890157",
-          "name": "Teen Facial",
-          "description": "For teens we focus on education. Experience a full cleanse as we talk through the steps of facial hygiene & ways to prevent hormonal breakouts. followed with an at home skin routine. *Dermalogice teen line is available for retail.",
-          "price": 45.50,
-          "category": 2,
-          "image": "teen.jpg"
-        }
-      },
-      {
-        "pk": 5,
-        "model": "products.product",
-        "fields": {
-          "sku": "pp5002111605",
-          "name": "Stone massage",
-          "description": "Technique for stress reduction and relaxation that also helps to promote healing. The use of energy work has been used for many years to help release blockages in our energy fields",
-          "price": 37.40,
-          "category": 1,
-          "image": "stone.jpg"
-        }
-      },
-      {
-        "pk": 6,
-        "model": "products.product",
-        "fields": {
-          "sku": "pp5002260206",
-          "name": "Foot Massage",
-          "description": "A regular foot massage may help promote physiological as well as physical health to improve blood circulation resulting from sedentary lifestyle, many of us don't use our feet muscles properly, thus impeding good blood flow. Schedule individually or add on to any manicure or facial appointment.",
-          "price": 35.90,
-          "category": 3,
-          "image": "foot.jpg"
-        }
-      },
-      {
-        "pk": 7,
-        "model": "products.product",
-        "fields": {
-          "sku": "pp5002440521",
-          "name": "Reflexology",
-          "description": "A natural therapeutic methods derived from this study based on the principle that there are reflexes in the body that map to other parts, glands, and organs of the body. Reflexology therapy can relieve tension, improve circulation & support the body to function optimally.",
-          "price": 30.99,
-          "category": 3,
-          "image": "refle.jpg"
-        }
-      },
-      {
-        "pk": 8,
-        "model": "products.product",
-        "fields": {
-          "sku": "pp5002601115",
-          "name": "Jacuzzi",
-          "description": "A nice hot and relaxing bath for our skin, combined with a foam and special herbs.",
-          "price": 145.80,
-          "category": 4,
-          "image": "jacuzzi.jpg"
-        }
-      }
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Body Massage",
+      "description": "Created to recondition skin, detoxify and invigorate, and nurture mind and body. Using the finest botanical formulations, revitalising body scrubs and nurturing body wraps, for detoxification, skin that is supple and toned and complete relaxation.",
+      "price": 55.99,
+      "category": 1,
+      "image": "body.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600425",
+      "name": "Elite Facial",
+      "description": "Experience complete relaxation while being cocooned in a heated cloud of bliss. Our Elite Facials are 100% customized to your skin. We combine the basics of a facial with steam & extractions for that extra boost. To top it off we add a face, hand & arm massage to complete your Forever Young Facial experience.",
+      "price": 68.55,
+      "category": 2,
+      "image": "elite.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730010",
+      "name": "Premium Elite Facial",
+      "description": "100% customized to your skin. Combine all of the benefits of the elite facial with 2 luxurious add on's of your choice. Foot massage, Warm paraffin wax hand soak, Stress positive eye massage, Exfoliating lip treatment, Gua Sha stone face massage, Scalp massage",
+      "price": 86.70,
+      "category": 2,
+      "image": "premium.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001890157",
+      "name": "Teen Facial",
+      "description": "For teens we focus on education. Experience a full cleanse as we talk through the steps of facial hygiene & ways to prevent hormonal breakouts. followed with an at home skin routine. *Dermalogice teen line is available for retail.",
+      "price": 45.50,
+      "category": 2,
+      "image": "teen.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002111605",
+      "name": "Stone massage",
+      "description": "Technique for stress reduction and relaxation that also helps to promote healing. The use of energy work has been used for many years to help release blockages in our energy fields",
+      "price": 37.40,
+      "category": 1,
+      "image": "stone.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002260206",
+      "name": "Foot Massage",
+      "description": "A regular foot massage may help promote physiological as well as physical health to improve blood circulation resulting from sedentary lifestyle, many of us don't use our feet muscles properly, thus impeding good blood flow. Schedule individually or add on to any manicure or facial appointment.",
+      "price": 35.90,
+      "category": 3,
+      "image": "foot.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002440521",
+      "name": "Reflexology",
+      "description": "A natural therapeutic methods derived from this study based on the principle that there are reflexes in the body that map to other parts, glands, and organs of the body. Reflexology therapy can relieve tension, improve circulation & support the body to function optimally.",
+      "price": 30.99,
+      "category": 3,
+      "image": "refle.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002601115",
+      "name": "Jacuzzi",
+      "description": "A nice hot and relaxing bath for our skin, combined with a foam and special herbs.",
+      "price": 145.80,
+      "category": 4,
+      "image": "jacuzzi.jpg"
+    }
+  }
 ]
