@@ -1,34 +1,89 @@
 {% extends "base.html" %}
 {% load static %}
 
-
-{% block page_header %}
-{% endblock %}
-
 {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <h5>Products</h5>
+            {% for c in current_categories %}
+                <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                    <span class="mx-2 text-white fs-5">{{ c.friendly_name }}</span>
+                </a>
+            {% endfor %}
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        {% for product in products %}
-            <div class="col">
-                <div class="card border-0">
-                    <a href="{% url 'product_detail' product.id %}"><img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}"></a>
-                    <div class="card-body">
-                        <h3 class="card-title">{{ product.name }}</h3>
-                        <p>${{ product.price }}</p>
-                        {% if product.category %}
-                            <a class="d-flex" href="{% url 'products' %}?category={{ products.category.name }}">
-                                <i class="las la-tag" style="font-size: 0.7rem;"></i><p>{{ product.category.friendly_name }}</p>
-                            </a>
+            <p class="text-muted">
+                {% if search_term or current_categories or current_sorting != 'None_None' %}
+                    <span class="small"><a class="small" href="{% url 'products' %}">Products Home</a> | </span>
+                {% endif %}
+                {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+            </p>
+
+            <hr class="w-5 mb-1">
+        </div>
+        
+        <div class="row">
+            {% for product in products %}
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 border-0">
+                        {% if product.image %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
                         {% endif %}
+                        <div class="card-body pb-0">
+                            <p class="mb-0">{{ product.name }}</p>
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                    {% if product.category %}
+                                    <p class="small mt-1 mb-0">
+                                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                        </a>
+                                    </p>
+                                    {% endif %}
+                                    {% if product.rating %}
+                                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                    {% else %}
+                                        <small class="text-muted">No Rating</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        {% endfor %}
+                {% if forloop.counter|divisibleby:1 %}
+                    <div class="col-12 d-sm-none mb-5">
+                        <hr>
+                    </div>
+                {% endif %}                        
+                {% if forloop.counter|divisibleby:2 %}
+                    <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                        <hr>
+                    </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:3 %}
+                    <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                        <hr>
+                    </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:4 %}
+                    <div class="col-12 d-none d-xl-block mb-5">
+                        <hr>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
-
     <div class="btt-button shadow-sm rounded-0 border border-black">
         <a class="btt-link d-flex h-100">
-            <i class="las la-arrow-up mx-auto my-auto"></i>
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
         </a>	
     </div>
 {% endblock %}

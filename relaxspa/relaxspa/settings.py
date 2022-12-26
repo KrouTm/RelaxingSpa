@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-_(qgo3((*a57c(h0xawkq^=x-z(a7of5c^4g3p5hr0b2)tzz@&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CSRF_TRUSTED_ORIGINS = ['https://kroutm-upgraded-journey-gwp96pwgjq4fvqrr-8000.preview.app.github.dev','http://127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://kroutm-upgraded-journey-gwp96pwgjq4fvqrr-8000.preview.app.github.dev','http://127.0.0.1'] # Precisa disso para autorizar
 
 
 # Application definition
