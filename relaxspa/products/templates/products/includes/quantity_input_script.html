@@ -17,13 +17,13 @@
     }
 
     // Check enable/disable every time the input is changed
-    $('.qty_input').change(function() {
+    $(document).on("click", '.qty_input', function() {
         var itemId = $(this).data('item_id');
         handleEnableDisable(itemId);
     });
 
     // Increment quantity
-    $('.increment-qty').click(function(e) {
+    $(document).on("click", '.increment-qty', function(e) {
        e.preventDefault();
        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
        var currentValue = parseInt($(closestInput).val());
@@ -33,7 +33,7 @@
     });
 
     // Decrement quantity
-    $('.decrement-qty').click(function(e) {
+    $(document).on("click", '.decrement-qty', function(e) {
        e.preventDefault();
        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
        var currentValue = parseInt($(closestInput).val());
