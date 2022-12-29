@@ -29,11 +29,11 @@
                                     <img class="img-fluid rounded" src="{{ item.product.image.url }}">
                                 </td>
                                 <td class="py-3">
-                                    <h6 class="my-0 fs-4">{{ item.product.name }}</h6>
-                                    <p class="my-0 fs-6 text-muted">SKU: {{ item.product.sku|upper }}</p>
+                                    <h6 class="my-0">{{ item.product.name }}</h6>
+                                    <p class="my-0"><small class="text-muted">SKU: {{ item.product.sku|upper }}</small></p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">${{ item.product.price }}</p>
+                                    <p class="my-0 fs-6">${{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3 w-25">
                                     <form class="form update-form" method="POST" action="">
@@ -70,7 +70,7 @@
 
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                    <p class="my-0 fs-5">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                 </td>
                             </tr>
                         {% endfor %}
