@@ -4,19 +4,19 @@
 {% block content %}
     <div class="container-fluid">
         <div class="row">
-            <h5>Products</h5>
+            <h1>Products</h1>
             {% for c in current_categories %}
                 <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                    <span class="mx-2 text-white fs-5">{{ c.friendly_name }}</span>
+                    <span class="mx-2 text-white fs-5 border-start ps-2">{{ c.friendly_name }}</span>
                 </a>
             {% endfor %}
 
-            <p class="text-muted">
+            <div class="text-muted fs-6">
                 {% if search_term or current_categories or current_sorting != 'None_None' %}
                     <span class="small"><a class="small" href="{% url 'products' %}">Products Home</a> | </span>
                 {% endif %}
                 {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
-            </p>
+            </div>
         </div>
         
         <div class="row">
@@ -33,13 +33,11 @@
                         </a>
                         {% endif %}
                         <div class="card-body">
-                            <p class="mb-0">{{ product.name }}</p>
+                            <h6 class="mb-0">{{ product.name }}</h6>
                             <div class="col">
                                 <p>${{ product.price }}</p>
                                 {% if product.category %}
-                                <a href="{% url 'products' %}?category={{ product.category.name }}">
-                                    <p><i class="fas fa-tag me-1" style="font-size: 0.5rem;"></i>{{ product.category.friendly_name }}</p>
-                                </a>
+                                <a href="{% url 'products' %}?category={{ product.category.name }}" style=" font-size:0.7rem;"><i class="fas fa-tag me-1" style=" font-size:0.7rem;"></i>{{ product.category.friendly_name }}</a>
                                 {% endif %}
                             </div>                            
                         </div>
