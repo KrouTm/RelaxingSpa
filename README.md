@@ -1,4 +1,4 @@
-<p align="center"><img src="static/Pictures/Logo.png" height="300px" width="auto"></p>
+<p align="center"><img src="relaxspa/static/Pictures/Logo.png" height="300px" width="auto"></p>
 
 ## User Experience (UX)
 
