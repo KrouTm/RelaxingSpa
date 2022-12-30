@@ -141,3 +141,8 @@ a{text-decoration: none;}
 .arrow-dark {border-bottom-color: #343a40 !important;}
 
 .bag-notification-wrapper {height: 100px; overflow-x: hidden; overflow-y: auto;}
+
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
