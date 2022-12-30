@@ -37,7 +37,13 @@
                             <div class="col">
                                 <p>${{ product.price }}</p>
                                 {% if product.category %}
-                                <a href="{% url 'products' %}?category={{ product.category.name }}" style=" font-size:0.7rem;"><i class="fas fa-tag me-1" style=" font-size:0.7rem;"></i>{{ product.category.friendly_name }}</a>
+                                    <a href="{% url 'products' %}?category={{ product.category.name }}" style=" font-size:0.7rem;"><i class="fas fa-tag me-1" style=" font-size:0.7rem;"></i>{{ product.category.friendly_name }}</a>
+                                {% endif %}
+                                {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </small>
                                 {% endif %}
                             </div>                            
                         </div>
