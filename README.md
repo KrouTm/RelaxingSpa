@@ -75,7 +75,6 @@
 -   ### Design
     -   #### Colour Scheme
         -   The colors used on this website were:
-        <img src="">
 
     -   #### Typography Poiret One, Mali and Julius Sans One
         -   Poiret One was used for the titles, Mali and Julius Sans One was used for texts and descriptions.
