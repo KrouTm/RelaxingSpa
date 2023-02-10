@@ -50,27 +50,31 @@
         {% endblock %}
 
         {% block navbar %}
-            <nav class="navbar navbar-expand-lg bg-light bg-primary sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light bg-primary sticky-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="../../../static/Pictures/Logo2.png" alt=""></a>
 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto m-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
                             {% include 'includes/mobile-top-header.html' %}
                             {% include 'includes/main-nav.html' %}
-                            <li class="nav-item"><a class="nav-link active" href="#Contact">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="/products">Products</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
                         </ul>
 
-                        <ul class="navbar-nav me-auto m-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="list-inline-item dropdown">
                                 <a class="nav-link" href="#" id="user-options" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div class="text-center" style="line-height: 0rem; transform: translateY(0.3rem);">
                                         <i class="las la-user-circle text-secondary"><p class="text-secondary">My Account</p></i>
                                     </div>
                                 </a>
-                                <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                <div class="dropdown-menu" aria-labelledby="user-options">
                                     {% if request.user.is_authenticated %}
                                         {% if request.user.is_superuser %}
                                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -83,6 +87,7 @@
                                     {% endif %}
                                 </div>
                             </li>
+
                             <li class="list-inline-item">
                                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                                     <div class="text-center" style="line-height: 0rem; transform: translateY(0.3rem);">

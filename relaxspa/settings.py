@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 APPEND_SLASH = True
@@ -26,7 +27,7 @@ SECRET_KEY = "django-insecure-_(qgo3((*a57c(h0xawkq^=x-z(a7of5c^4g3p5hr0b2)tzz@&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CSRF_TRUSTED_ORIGINS = ['https://kroutm-upgraded-journey-gwp96pwgjq4fvqrr-8000.preview.app.github.dev','http://127.0.0.1'] # Precisa disso para autorizar
+CSRF_TRUSTED_ORIGINS = ['https://kroutm-upgraded-journey-gwp96pwgjq4fvqrr-8000.preview.app.github.dev','http://127.0.0.1', 'https://8000-kroutm-relaxingspa-qy5v7r26udr.ws-us86.gitpod.io'] # Precisa disso para autorizar
 
 
 # Application definition
@@ -119,12 +120,17 @@ WSGI_APPLICATION = "relaxspa.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation

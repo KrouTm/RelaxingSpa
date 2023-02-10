@@ -56,10 +56,10 @@ a{text-decoration: none;}
 
 /*Contact*/
 #Contact{background-image: url('../../static/Pictures/contact.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; z-index: -10; width: 100%; height: 20rem}
-.form-contact{padding: 2rem 0; position: absolute; right: 2rem; width: 30%;}
+.form-contact{padding: 2rem 0; position: absolute; right: 2rem; width: 40%;}
 .form-control{padding: 0.1rem 0.5rem; margin: 0.1rem 0; border: solid 2px purple; cursor: text; font-family: 'Mali', cursive; font-size: 0.7rem; color: white; background-color: rgba(0, 0, 0, 0.5);}
 .form-control::placeholder{color: white;}
-@media(max-width:768px){
+@media(max-width:1024px){
     .form-contact{width: 90%; right: 0; left: 0; margin: auto;}
 }
 
@@ -88,12 +88,13 @@ a{text-decoration: none;}
 .social-footer i{margin: 1rem;}
 .social-footer i:hover{opacity: 0.7;}
 
-@media(max-width:768px){
+@media(max-width:1200px){
     .footer hr{margin: auto;}
     .grid-footer{display: block; margin: auto; text-align: center;}
     .p-info-font{text-align: center;}
     .p-info-font a{display: block;}
     .margin-footer{margin: 1rem 0;}
+    .post{margin: auto;}
     .post ul{max-width: 90%; margin: auto;}
 }
 
