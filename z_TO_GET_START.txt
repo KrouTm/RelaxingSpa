@@ -1,7 +1,8 @@
-export STRIPE_PUBLIC_KEY=...
-export STRIPE_SECRET_KEY=...
+export STRIPE_PUBLIC_KEY=
+export STRIPE_SECRET_KEY=
 npm install -g heroku
 pip install -r requirements.txt
 heroku login -i
 heroku config:set DISABLE_COLLECTSTATIC=1 --app relaxingspa
 heroku git:remote -a relaxingspa
+heroku plugins:install heroku-repo
