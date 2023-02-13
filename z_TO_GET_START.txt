@@ -1,0 +1,6 @@
+export STRIPE_PUBLIC_KEY=...
+export STRIPE_SECRET_KEY=...
+npm install -g heroku
+pip install -r requirements.txt
+heroku login -i
+heroku git:remote -a relaxingspa
