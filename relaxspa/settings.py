@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-_(qgo3((*a57c(h0xawkq^=x-z(a7of5c^4g3p5hr0b2)tzz@&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://relaxingspa.herokuapp.com/', 'localhost']
+ALLOWED_HOSTS = ['relaxingspa.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://kroutm-upgraded-journey-gwp96pwgjq4fvqrr-8000.preview.app.github.dev','http://127.0.0.1', 'https://8000-kroutm-relaxingspa-qy5v7r26udr.ws-us86.gitpod.io'] # Precisa disso para autorizar
 
