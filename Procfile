@@ -1,1 +1,1 @@
-web: gunicorn relaxingspa.wsgi:application
+web: gunicorn relaxpa.wsgi:application
