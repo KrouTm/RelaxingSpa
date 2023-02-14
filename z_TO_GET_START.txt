@@ -1,8 +1,9 @@
 export STRIPE_PUBLIC_KEY=
-pk_test_51MKApyGigg6rSfIhD9018D6JQ5b4RkiVgqH6kvc9zQL1bxXItaWC3CsdWT7qy37KPImBQVn0HrMgFslzKoiTqTBY00mToR4uFX
+export STRIPE_SECRET_KEY=
 npm install -g heroku
 pip install -r requirements.txt
 heroku login -i
 heroku config:set DISABLE_COLLECTSTATIC=1 --app relaxingspa
 heroku git:remote -a relaxingspa
 heroku plugins:install heroku-repo
+backports.zoneinfo;python_version<"3.9"
