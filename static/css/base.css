@@ -45,7 +45,7 @@ a{text-decoration: none;}
 
 /*3 Cards*/
 /*Background purple*/
-.row{padding: 3rem 3rem; background-image: url(../Pictures/background-purple.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin: 0;}
+.row{padding: 3rem 3rem; background-image: url(Pictures/background-purple.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin: 0;}
 /*3 Cards Images*/
 .card-img0{background-image: url(https://images.pexels.com/photos/374148/pexels-photo-374148.jpeg); background-position: center;}
 .card-img1{background-image: url(https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80); background-position: right;}
@@ -55,7 +55,7 @@ a{text-decoration: none;}
 
 
 /*Contact*/
-#Contact{background-image: url('../../static/Pictures/contact.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; z-index: -10; width: 100%; height: 20rem}
+#Contact{background-image: url('Pictures/contact.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; z-index: -10; width: 100%; height: 20rem}
 .form-contact{padding: 2rem 0; position: absolute; right: 2rem; width: 40%;}
 .form-control{padding: 0.1rem 0.5rem; margin: 0.1rem 0; border: solid 2px purple; cursor: text; font-family: 'Mali', cursive; font-size: 0.7rem; color: white; background-color: rgba(0, 0, 0, 0.5);}
 .form-control::placeholder{color: white;}
@@ -79,8 +79,8 @@ a{text-decoration: none;}
 /*Recent Posts*/
 .post{margin-left: -3rem;}
 .post ul{display: flex; border: solid 1px rgb(206, 189, 179); border-radius: 0.2rem; line-height: normal;}
-.img-new{background-image: url(../../static/Pictures/footer/elite.jpg);}
-.img-new0{background-image: url(../../static/Pictures/footer/jacuzzi.jpg);}
+.img-new{background-image: url(Pictures/footer/elite.jpg);}
+.img-new0{background-image: url(Pictures/footer/jacuzzi.jpg);}
 .style-new{display: flex; width: 5rem; height: auto; margin-left: -2rem; border-radius: 0.2rem; background-position: center; background-size: cover; background-repeat: no-repeat;}
 .post li{display: block; padding: 0.5rem;}
 /*Social Medias*/
@@ -102,12 +102,12 @@ a{text-decoration: none;}
 
 
 /*Background Images Booking*/
-.buy-product0{background-image: url(../static/Pictures/backgroung-booking/cosmetology-and-spa.jpg);}
-.buy-product1{background-image: url(../static/Pictures/backgroung-booking/spa-concept-with-woman-and-massage.jpg);}
-.buy-product2{background-image: url(static/Pictures/backgroung-booking/spa-concept-with-woman-with-creme-in-face.jpg);}
+.buy-product0{background-image: url(Pictures/backgroung-booking/cosmetology-and-spa.jpg);}
+.buy-product1{background-image: url(Pictures/backgroung-booking/spa-concept-with-woman-and-massage.jpg);}
+.buy-product2{background-image: url(Pictures/backgroung-booking/spa-concept-with-woman-with-creme-in-face.jpg);}
 .buy-product3{background-image: url(Pictures/backgroung-booking/young-woman-relaxing-in-spa-salon.jpg);}
-.buy-product4{background-image: url(../../static/Pictures/backgroung-booking/woman-relaxing-in-bath-with-bubbles.jpg);}
-.buy-product5{background-image: url(elite.jpg);}
+.buy-product4{background-image: url(Pictures/backgroung-booking/woman-relaxing-in-bath-with-bubbles.jpg);}
+.buy-product5{background-image: url(Pictures/backgroung-booking/elite.jpg);}
 .img-product{background-position: center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 70vh;}
 
 
