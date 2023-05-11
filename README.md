@@ -1,5 +1,7 @@
 <p align="center"><img src="relaxspa/static/Pictures/Logo.png" height="300px" width="auto"></p>
 
+[View the wesite here.](https://relaxingspa.herokuapp.com/)
+
 ## User Experience (UX)
 
 -   ### User stories
